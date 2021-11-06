@@ -24,24 +24,59 @@
     </div>
 
     <div id = "q2_man_wrapper">
-        <div>Хотел бы ты иметь возможность становиться невидимым?</div>
+        <div>Хотел бы ты уметь летать?</div>
         <input type="button" id="start" class="start" value="Да" onclick="q2_man_yes()">
         <input type="button" id="start" class="start" value="Нет" onclick="q2_man_no()">
     </div>
 
+    <div id = "q3_man_wrapper">
+        <div>Хотел бы ты иметь возможность становиться невидимым?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q3_man_yes()">
+        <input type="button" id="start" class="start" value="Нет" onclick="q3_man_no()">
+    </div>
+
+    <div id = "q4_man_wrapper">
+        <div>Вы хитрый человек?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q4_man_yes()">
+        <input type="button" id="start" class="start" value="Нет" onclick="q4_man_no()">
+    </div>
+
+    <div id = "q5_man_wrapper">
+        <div>Хотели бы вы быть секретным агентом?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q5_man_yes()">
+        <input type="button" id="start" class="start" value="Нет" onclick="q5_man_no()">
+    </div>
+
+    <div id = "q6_man_wrapper">
+        <div>Хотели бы вы иметь сверхспособности?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q6_man_yes()">
+        <input type="button" id="start" class="start" value="Нет" onclick="q6_man_no()">
+    </div>
+
+    <div id = "q7_man_wrapper">
+        <div>Любите ли вы енотов?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q7_man_yes()">
+        <input type="button" id="start" class="start" value="Нет" onclick="q7_man_no()">
+    </div>
+
     <div id = "tanos">
-        
-        <div>Ты гей</div>
-        
+        <div>Ты Танос</div>
     </div>
 
     <div id = "tor">
-        
-        <div>Ты гей</div>
-        
+        <div>Ты Тор</div>
     </div>
 
-   
+    <div id = "loki">
+        <div>Ты Тор</div>
+    </div>
+
+    <div id = "cap_america">
+        <div>Ты Капитан Америка</div>
+    </div>
+
+    <div id = "kolson">
+        <div>Ты Агент Колсон</div>
     </div>
 
 
@@ -57,14 +92,48 @@
         //функции для второго вопроса про мужиков
         function q2_man_yes(){
             document.getElementById("q2_man_wrapper").style.display = "none";
-            document.getElementById("tanos").style.display = "block";
+            document.getElementById("q3_man_wrapper").style.display = "block";
         }
         function q2_man_no(){
             document.getElementById("q2_man_wrapper").style.display = "none";
+            document.getElementById("q4_man_wrapper").style.display = "block";
+        }
+        //функции для третьего вопроса про мужиков
+        function q3_man_yes(){
+            document.getElementById("q3_man_wrapper").style.display = "none";
+            document.getElementById("tanos").style.display = "block";
+        }
+        function q3_man_no(){
+            document.getElementById("q3_man_wrapper").style.display = "none";
             document.getElementById("tor").style.display = "block";
         }
-
-
+        //функции для четвертого вопроса про мужиков
+        function q4_man_yes(){
+            document.getElementById("q4_man_wrapper").style.display = "none";
+            document.getElementById("loki").style.display = "block";
+        }
+        function q4_man_no(){
+            document.getElementById("q4_man_wrapper").style.display = "none";
+            document.getElementById("q5_man_wrapper").style.display = "block";
+        }
+        //функции для пятого вопроса про мужиков
+        function q5_man_yes(){
+            document.getElementById("q5_man_wrapper").style.display = "none";
+            document.getElementById("q6_man_wrapper").style.display = "block";
+        }
+        function q5_man_no(){
+            document.getElementById("q5_man_wrapper").style.display = "none";
+            document.getElementById("q7_man_wrapper").style.display = "block";
+        }
+        //функции для шестого вопроса про мужиков
+        function q6_man_yes(){
+            document.getElementById("q6_man_wrapper").style.display = "none";
+            document.getElementById("cap_america").style.display = "block";
+        }
+        function q6_man_no(){
+            document.getElementById("q6_man_wrapper").style.display = "none";
+            document.getElementById("kolson").style.display = "block";
+        }
 
 
 
