@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <link rel="shortcut icon" href="./fav.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="start__wrapper">
+        <input type="button" id="start" class="start" value="start" onclick="start()">
+    </div>
+
+    <div id = "q1_wrapper">
+        <div>Какого ты пола?</div>
+        <input type="button" id="start" class="start" value="Мужской" onclick="man()">
+        <input type="button" id="start" class="start" value="Женский" onclick="woman()">
+    </div>
+
+    <div id = "q2_man_wrapper">
+        <div>Хотел бы ты иметь возможность становиться невидимым?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q2_man_yes()">
+        <input type="button" id="start" class="start" value="Нет" onclick="q2_man_no()">
+    </div>
+
+    <div id = "tanos">
+        <div>Ты гей</div>
+        
+    </div>
+
+    <div id = "tor">
+        <div>Ты гей</div>
+        
+    </div>
+
+   
+    </div>
+
+
+    <script>
+        function start(){
+            document.getElementById("q1_wrapper").style.display = "block";
+            document.getElementById("start").style.display = "none";
+        }
+        function man(){
+            document.getElementById("q1_wrapper").style.display = "none";
+            document.getElementById("q2_man_wrapper").style.display = "block";
+        }
+        //функции для второго вопроса про мужиков
+        function q2_man_yes(){
+            document.getElementById("q2_man_wrapper").style.display = "none";
+            document.getElementById("tanos").style.display = "block";
+        }
+        function q2_man_no(){
+            document.getElementById("q2_man_wrapper").style.display = "none";
+            document.getElementById("tor").style.display = "block";
+        }
+
+
+
+
+
+        ///////////////////ЖЕНЩИНЫ
+        function woman(){
+            document.getElementById("q1_wrapper").style.display = "none";
+            document.getElementById("start").style.display = "none";
+        }
+    </script>
+</body>
+</html>
