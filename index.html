@@ -59,6 +59,12 @@
         <input type="button" id="start" class="start" value="Нет" onclick="q7_man_no()">
     </div>
 
+    <div id = "q8_man_wrapper">
+        <div>Хотели бы вы быть волшебником?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q8_man_yes()">
+        <input type="button" id="start" class="start" value="Нет" onclick="q8_man_no()">
+    </div>
+
     <div id = "tanos">
         <div>Ты Танос</div>
     </div>
@@ -77,6 +83,14 @@
 
     <div id = "kolson">
         <div>Ты Агент Колсон</div>
+    </div>
+
+    <div id = "raketa">
+        <div>Ты Ракета</div>
+    </div>
+
+    <div id = "strange">
+        <div>Ты Доктор Стрэндж</div>
     </div>
 
 
@@ -133,6 +147,25 @@
         function q6_man_no(){
             document.getElementById("q6_man_wrapper").style.display = "none";
             document.getElementById("kolson").style.display = "block";
+        }
+        //функции для седьмого вопроса про мужиков
+        function q7_man_yes(){
+            document.getElementById("q7_man_wrapper").style.display = "none";
+            document.getElementById("raketa").style.display = "block";
+        }
+        function q7_man_no(){
+            document.getElementById("q7_man_wrapper").style.display = "none";
+            document.getElementById("q8_man_wrapper").style.display = "block";
+        }
+
+        //функции для восьмого вопроса про мужиков
+        function q8_man_yes(){
+            document.getElementById("q8_man_wrapper").style.display = "none";
+            document.getElementById("strange").style.display = "block";
+        }
+        function q8_man_no(){
+            document.getElementById("q8_man_wrapper").style.display = "none";
+            document.getElementById("q9_man_wrapper").style.display = "block";
         }
 
 
