@@ -65,6 +65,43 @@
         <input type="button" id="start" class="start" value="Нет" onclick="q8_man_no()">
     </div>
 
+    <div id = "q9_man_wrapper">
+        <div>Хотели бы вы иметь супер-костюм?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q9_man_yes()">
+        <input type="button" id="start" class="start" value="Нет" onclick="q9_man_no()">
+    </div>
+
+    <div id = "q10_man_wrapper">
+        <div>Вы можете назвать себя творческим изобретательным человеком?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q10_man_yes()">
+        <input type="button" id="start" class="start" value="Нет" onclick="q10_man_no()">
+    </div>
+
+    <div id = "q11_man_wrapper">
+        <div>Хотели бы вы стать ученым?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q11_man_yes()">
+        <input type="button" id="start" class="start" value="Нет" onclick="q11_man_no()">
+    </div>
+
+    <div id = "q12_man_wrapper">
+        <div>Хотели бы вы уметь общаться с животными?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q12_man_yes()">
+        <input type="button" id="start" class="start" value="Нет" onclick="q12_man_no()">
+    </div>
+
+    <div id = "q13_man_wrapper">
+        <div>Интересна ли вам военная тематика?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q13_man_yes()">
+        <input type="button" id="start" class="start" value="Нет" onclick="q13_man_no()"> <!--человек паук-->
+    </div>
+
+    <div id = "q14_man_wrapper">
+        <div>Любите ли вы физику?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q14_man_yes()"><!--черная пантера-->
+        <input type="button" id="start" class="start" value="Нет" onclick="q14_man_no()"><!--зимний солдат-->
+    </div>
+
+
     <div id = "tanos">
         <div>Ты Танос</div>
     </div>
@@ -91,6 +128,34 @@
 
     <div id = "strange">
         <div>Ты Доктор Стрэндж</div>
+    </div>
+    
+    <div id = "lord">
+        <div>Ты Звездный Лорд</div>
+    </div>
+
+    <div id = "iron_man">
+        <div>Ты Железный человек</div>
+    </div>
+
+    <div id = "halk">
+        <div>Ты Халк</div>
+    </div>
+
+    <div id = "muravey">
+        <div>Ты Человек-муравей</div>
+    </div>
+
+    <div id = "spider">
+        <div>Ты Человек-паук</div>
+    </div>
+
+    <div id = "pantera">
+        <div>Ты Черная Пантера</div>
+    </div>
+
+    <div id = "winter">
+        <div>Ты Зимний солдат</div>
     </div>
 
 
@@ -168,6 +233,65 @@
             document.getElementById("q9_man_wrapper").style.display = "block";
         }
 
+        //функции для девятого вопроса про мужиков
+        function q9_man_yes(){
+            document.getElementById("q9_man_wrapper").style.display = "none";
+            document.getElementById("q10_man_wrapper").style.display = "block";
+        }
+        function q9_man_no(){
+            document.getElementById("q9_man_wrapper").style.display = "none";
+            document.getElementById("q11_man_wrapper").style.display = "block";
+        }
+
+        //функции для десятого вопроса про мужиков
+        function q10_man_yes(){
+            document.getElementById("q10_man_wrapper").style.display = "none";
+            document.getElementById("iron_man").style.display = "block";
+        }
+        function q10_man_no(){
+            document.getElementById("q10_man_wrapper").style.display = "none";
+            document.getElementById("lord").style.display = "block";
+        }
+
+        //функции для 11 вопроса про мужиков
+        function q11_man_yes(){
+            document.getElementById("q11_man_wrapper").style.display = "none";
+            document.getElementById("halk").style.display = "block";
+        }
+        function q11_man_no(){
+            document.getElementById("q11_man_wrapper").style.display = "none";
+            document.getElementById("q12_man_wrapper").style.display = "block";
+        }
+
+        //функции для 12 вопроса про мужиков
+        function q12_man_yes(){
+            document.getElementById("q12_man_wrapper").style.display = "none";
+            document.getElementById("muravey").style.display = "block";
+        }
+        function q12_man_no(){
+            document.getElementById("q12_man_wrapper").style.display = "none";
+            document.getElementById("q13_man_wrapper").style.display = "block";
+        }
+
+        //функции для 13 вопроса про мужиков
+        function q13_man_yes(){
+            document.getElementById("q13_man_wrapper").style.display = "none";
+            document.getElementById("q14_man_wrapper").style.display = "block";
+        }
+        function q13_man_no(){
+            document.getElementById("q13_man_wrapper").style.display = "none";
+            document.getElementById("spider").style.display = "block";
+        }
+
+        //функции для 14 вопроса про мужиков
+        function q14_man_yes(){
+            document.getElementById("q14_man_wrapper").style.display = "none";
+            document.getElementById("pantera").style.display = "block";
+        }
+        function q13_man_no(){
+            document.getElementById("q14_man_wrapper").style.display = "none";
+            document.getElementById("winter").style.display = "block";
+        }
 
 
         ///////////////////ЖЕНЩИНЫ
