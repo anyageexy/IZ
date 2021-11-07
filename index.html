@@ -13,7 +13,6 @@
 <body>
     
     <div class="start__wrapper">
-        
         <input type="button" id="start" class="start" value="start" onclick="start()">
     </div>
 
@@ -101,6 +100,39 @@
         <input type="button" id="start" class="start" value="Нет" onclick="q14_man_no()"><!--зимний солдат-->
     </div>
 
+            <!-- ЖЕНЩИНЫ ВОПРОСЫ -->
+
+    <div id = "q2_woman_wrapper">
+        <div>Хотели бы вы быть шпионом?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q2_woman_yes()">
+        <input type="button" id="start" class="start" value="Нет" onclick="q2_woman_no()">
+    </div>
+
+    <div id = "q3_woman_wrapper">
+        <div>Хотели бы вы быть мастером боевых искусств?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q3_woman_yes()">
+        <input type="button" id="start" class="start" value="Нет" onclick="q3_woman_no()">
+    </div>
+
+    <div id = "q4_woman_wrapper">
+        <div>Хотели бы вы уметь летать?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q4_woman_yes()">
+        <input type="button" id="start" class="start" value="Нет" onclick="q4_woman_no()">
+    </div>
+
+    <div id = "q5_woman_wrapper">
+        <div>Хотели бы вы уметь уменьшаться?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q5_woman_yes()">
+        <input type="button" id="start" class="start" value="Нет" onclick="q5_woman_no()">
+    </div>
+
+    <div id = "q6_woman_wrapper">
+        <div>Хотели бы вы быть мастером боевых искусств?</div>
+        <input type="button" id="start" class="start" value="Да" onclick="q6_woman_yes()">
+        <input type="button" id="start" class="start" value="Нет" onclick="q6_woman_no()">
+    </div>
+
+
 
     <div id = "tanos">
         <div>Ты Танос</div>
@@ -158,12 +190,42 @@
         <div>Ты Зимний солдат</div>
     </div>
 
+    <div id = "vdova">
+        <div>Ты Черная Вдова</div>
+    </div>
+
+    <div id = "peggy">
+        <div>Ты Пегги Картер</div>
+    </div>
+
+    <div id = "osa">
+        <div>Ты Оса</div>
+    </div>
+
+    <div id = "cap_marvel">
+        <div>Ты Капитан Марвел</div>
+    </div>
+
+    <div id = "elektra">
+        <div>Ты Электра</div>
+    </div>
+
+    <div id = "gamora">
+        <div>Ты Гамора</div>
+    </div>
+
 
     <script>
         function start(){
             document.getElementById("q1_wrapper").style.display = "block";
             document.getElementById("start").style.display = "none";
         }
+
+        function woman(){
+            document.getElementById("q1_wrapper").style.display = "none";
+            document.getElementById("q2_woman_wrapper").style.display = "block";
+        }
+
         function man(){
             document.getElementById("q1_wrapper").style.display = "none";
             document.getElementById("q2_man_wrapper").style.display = "block";
@@ -295,9 +357,51 @@
 
 
         ///////////////////ЖЕНЩИНЫ
-        function woman(){
-            document.getElementById("q1_wrapper").style.display = "none";
-            document.getElementById("start").style.display = "none";
+        
+        //функции для второго вопроса про ж
+        function q2_woman_yes(){
+            document.getElementById("q2_woman_wrapper").style.display = "none";
+            document.getElementById("q3_woman_wrapper").style.display = "block";
+        }
+        function q2_woman_no(){
+            document.getElementById("q2_woman_wrapper").style.display = "none";
+            document.getElementById("q4_woman_wrapper").style.display = "block";
+        }
+        //функции для третьего вопроса про ж
+        function q3_woman_yes(){
+            document.getElementById("q3_woman_wrapper").style.display = "none";
+            document.getElementById("vdova").style.display = "block";
+        }
+        function q3_woman_no(){
+            document.getElementById("q3_woman_wrapper").style.display = "none";
+            document.getElementById("peggy").style.display = "block";
+        }
+        //функции для четвертого вопроса про ж
+        function q4_woman_yes(){
+            document.getElementById("q4_woman_wrapper").style.display = "none";
+            document.getElementById("q5_woman_wrapper").style.display = "block";
+        }
+        function q4_woman_no(){
+            document.getElementById("q4_woman_wrapper").style.display = "none";
+            document.getElementById("q6_woman_wrapper").style.display = "block";
+        }
+        //функции для пятого вопроса про ж
+        function q5_woman_yes(){
+            document.getElementById("q5_woman_wrapper").style.display = "none";
+            document.getElementById("osa").style.display = "block";
+        }
+        function q5_woman_no(){
+            document.getElementById("q5_woman_wrapper").style.display = "none";
+            document.getElementById("cap_marvel").style.display = "block";
+        }
+        //функции для шестого вопроса про ж
+        function q6_woman_yes(){
+            document.getElementById("q6_woman_wrapper").style.display = "none";
+            document.getElementById("elektra").style.display = "block";
+        }
+        function q6_woman_no(){
+            document.getElementById("q6_woman_wrapper").style.display = "none";
+            document.getElementById("gamora").style.display = "block";
         }
     </script>
 </body>
